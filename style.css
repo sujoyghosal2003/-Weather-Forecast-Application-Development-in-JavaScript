@@ -1,3 +1,4 @@
+/* Global reset and styles */
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@
     outline: none;
     font-family: sans-serif;
 }
+
+/* Body styles */
 body{
     min-height: 100vh;
     display: flex;
@@ -13,6 +16,8 @@ body{
     align-items: center;
     background-image: url('https://source.unsplash.com/1600x900/?weather');
 }
+
+/* Container styles */
 .container{
     width: 400px;
     height: min-content;
@@ -20,6 +25,8 @@ body{
     border-radius: 20px;
     padding: 28px;
 }
+
+/* Search box styles */
 .search-box{
     width: 100%;
     height: min-content;
@@ -27,6 +34,8 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+/* Input field styles */
 .search-box input{
     width: 84%;
     font-size: 20px;
@@ -36,9 +45,13 @@ body{
     padding: 12px 16px;
     border-radius: 14px;
 }
+
+/* Placeholder styles */
 .search-box input::placeholder{
     color: rgb(158, 153, 153);
 }
+
+/* Search button styles */
 .search-box button{
     width: 46px;
     height: 46px;
@@ -46,11 +59,15 @@ body{
     cursor: pointer;
     font-size: 20px;
 }
+
+/* Hover styles for search button */
 .search-box button:hover{
     border: 2px solid #e6f5fb;
     color: #6b90c8;
     background-color: #ababab;
 }
+
+/* Weather body styles */
 .weather-body{
     display: none;
     justify-content: center;
@@ -58,57 +75,81 @@ body{
     flex-direction: column;
     margin-block: 20px;
 }
+
+/* Weather image styles */
 .weather-body img{
     width: 60%;
 }
+
+/* Weather box styles */
 .weather-box{
     margin-block: 20px;
     text-align: center;
 }
+
+/* Temperature styles */
 .weather-box .temperature{
     font-size: 40px;
     font-weight: 800;
     position: relative;
 }
+
+/* Superscript styles */
 .weather-box .temperature sup{
     font-size: 20px;
     position: absolute;
     font-weight: 600;
 }
 
+/* Description styles */
 .weather-box .description{
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
 }
+
+/* Weather details styles */
 .weather-details{
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
+
+/* Humidity and wind styles */
 .humidity, .wind{
     display: flex;
     align-items: center;
 }
+
+/* Humidity styles */
 .humidity{
     margin-left: 20px;
 }
+
+/* Wind styles */
 .wind{
     margin-right: 20px;
 }
+
+/* Weather icon styles */
 .weather-details i{
     font-size: 36px;
 }
+
+/* Text styles */
 .weather-details .text{
     margin-left: 10px;
     font-size: 16px;
 }
+
+/* Span styles */
 .text span{
     font-size: 20px;
     font-weight: 700;
 }
 
+/* Location not found styles */
 .location-not-found{
     margin-top: 20px;
     display: none;
@@ -117,14 +158,7 @@ body{
     flex-direction: column;
 }
 
+/* Heading styles */
 .location-not-found h1{
     font-size: 20px;
-    color: #6b6b6b;
-    margin-block-end: 15px;
-
 }
-
-.location-not-found img{
-    width: 80%;
-}
-
